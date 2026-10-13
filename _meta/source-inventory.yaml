@@ -18,3 +18,17 @@
     - page/stackforce/gate/M1-G09-质量测量.md
     - page/stackforce/gate/M1-G10-停机验证.md
     - docs/evidence/E-M1-002-M1实机契约复审与Powered全通道回归.md
+
+- id: SERVO-PACKAGE-LABEL-20261013
+  title: DS041MG servo package label
+  path: page/assets/images/E-HW-005-DS041MG舵机包装铭牌与标称规格/ds041mg-package-label.jpg
+  type: manufacturer-spec-photo
+  priority: 1
+  status: ingested
+  covered_pages:
+    - docs/evidence/E-HW-005-DS041MG舵机包装铭牌与标称规格.md
+    - page/stackforce/evidence/evidence-registry.md
+    - page/stackforce/evidence/source-inventory.md
+    - page/stackforce/gate/M1-G01-硬件清点.md
+    - page/stackforce/topic/M1-T01-硬件基线.md
+    - page/stackforce/topic/M1-T02-执行器映射.md

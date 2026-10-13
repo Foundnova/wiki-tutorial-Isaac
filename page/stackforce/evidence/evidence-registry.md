@@ -32,6 +32,7 @@
 | **`E-HW-002`** | PCA9685多路舵机与MPU6050扩展板原理图 | **VALID** | `DOC_SPEC` | Hardware Schematic | `P01`~`P05`: PCA9685PW 拓扑、MPU6050 传感电路、TPS5450 5A Buck 降压、8 路舵机隔离排针、CN1/CN2 互联 | `M1-G01`, `M1-G02`, `M1-G03`, `M1-G06`, `T-ACT-001` |
 | **`E-HW-003`** | 双路无刷轮机驱动器与逆变电路原理图 | **VALID** | `DOC_SPEC` | Hardware Schematic | `P01`~`P05`: DRV8313 驱动逆变拓扑、INA199 电流采样、磁编码器物理接口、TPS5450 稳压、动力端子 | `M1-G01`, `M1-G02`, `M1-G03` |
 | **`E-HW-004`** | 板间TWAI-CAN与RS485总线通信板原理图 | **VALID** | `DOC_SPEC` | Hardware Schematic | `P01`~`P05`: SN65HVD230 CAN 收发、SP3485 RS-485 扩展、120Ω 终端电阻、B0505S 隔离电源、TVS 防护 | `M1-G01`, `T01` |
+| **`E-HW-005`** | DS041MG舵机包装铭牌与标称规格 | **VALID** | `DOC_SPEC` | Hardware Label | `P01`~`P03`: 型号与控制标注、三档电压下的标称速度与扭矩、外形重量与电机类型 | `M1-G01`, `M1-T01`, `M1-T02` |
 | **`E-SIM-001`** | 闭链四足轮腿机器人单父树URDF资产 | **VALID** | `CONFIGURATION` | Simulation Asset | `P01`~`P05`: 29 Links / 28 Joints 单父树、W2 Loop-Cut 切断策略、驱动维度、惯性张量与 STL 网格、末端轮机 | `M1-G08`, `M1-G09`, `M2-G01`, `M2-G02`, `M2-G05`, `M2-G07`, `T-ACT-001` |
 | **`E-SIM-002`** | 双支链闭环几何装配不变量与参考系配置 | **VALID** | `CONFIGURATION` | Simulation Asset | `P01`~`P05`: 轴向偏置 -44.950mm、径向共线残差 < 1.83e-17m、Inner Knee 间隙 0.150mm、底盘对称反射矩阵、闭环重构校验契约 | `M1-G08`, `M2-G03`, `M2-G04` |
 | **`E-SIM-003`** | PhysX闭环副自动重构与USD后处理实现 | **VALID** | `IMPLEMENTATION` | Simulation Asset | `P01`~`P05`: Isaac Sim 无头环境、closure_joints 作用域、UsdPhysics.RevoluteJoint 注入、excludeFromArticulation=true、Flatten 导出 | `M2-G07`, `M2-G08` |
@@ -43,5 +44,6 @@
 
 ## 2. 更新日志
 
+- 2026-10-13：新增 `E-HW-005`，将用户提供的 DS041MG 包装铭牌作为规格证据归档；包装标称值不提升为实测性能。
 - 2026-09-15：彻底重构为只读索引表（Index Only）；移除非法的本地 Claim 与结果定义，明确所有事实真源归属于 `docs/evidence/` 下的具体原子证据文件；收录全部 26 篇正式原子证据。
 - 2026-09-15：严格规范证据状态（生命周期状态统一解耦为 `VALID`，严禁与 PASS/FAIL 混淆），独立明确认识论角色（`Epistemic Role`：`DOC_SPEC`, `IMPLEMENTATION`, `CONFIGURATION`, `RUNTIME`, `PHYSICAL`, `VALIDATION`）。

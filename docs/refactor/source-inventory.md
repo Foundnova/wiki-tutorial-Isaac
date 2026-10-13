@@ -11,7 +11,7 @@
 
 | Source Type | 数量 | 覆盖范围 |
 |---|---:|---|
-| `MANUFACTURER_SPEC` | 8 | 官方原理图 PDF、硬件连接图纸、组装调试手册 |
+| `MANUFACTURER_SPEC` | 9 | 官方原理图 PDF、硬件连接图纸、组装调试手册、实物产品包装铭牌 |
 | `OFFICIAL_DOC` | 4 | NVIDIA Isaac Sim / Lab 官方手册、ESP-IDF / SimpleFOC 规范 |
 | `SOURCE_CPP` | 7 | 主控板与下位机固件源码、CAN 通信库、PCA9685 驱动 |
 | `SOURCE_PYTHON` | 6 | 规范资产生成器、闭环恢复脚本、静态校验器、仿真烟囱测试器 |
@@ -21,7 +21,7 @@
 | `PHYSICAL_MEASUREMENT` | 3 | 实机测频/延迟 CSV、执行器注册 CSV、安全联锁记录 |
 | `GENERATED_REPORT` | 3 | 2400 步 CPU 仿真报告、负对照报告、四腿几何校验报告 |
 | `EXISTING_EVIDENCE` | 6 | Wiki 现有 evidence/ 页面与 _meta 元数据配置 |
-| **总计** | **48** | **全工程关键证据源全覆盖** |
+| **总计** | **49** | **全工程关键证据源全覆盖** |
 
 ---
 
@@ -37,6 +37,7 @@
 | `SRC-HW-006` | `MANUFACTURER_SPEC` | `doc/四足机器人-origin/1教程/1安装文档.pdf` | 机械本体装配指南、舵机舵盘零位机械对齐说明 | `M1-G04`, `M1-T05` | `E-mechanical-机械本体装配与零位说明` | RAW_AVAILABLE |
 | `SRC-HW-007` | `MANUFACTURER_SPEC` | `doc/四足机器人-origin/1教程/2接线文档.pdf` | 电气母线与通信接线说明（主控板至电机驱动板、电池接线） | `M1-G01`, `M1-T01` | `E-hardware-主控板与舵机IMU电气原理图` | RAW_AVAILABLE |
 | `SRC-HW-008` | `MANUFACTURER_SPEC` | `doc/四足机器人-origin/1教程/3调试文档 .pdf` | 固件烧录、零位微调与基本串口调试指南 | `M1-G04`, `M1-T02` | `E-firmware-出厂遥控器与PPM协议说明` | RAW_AVAILABLE |
+| `SRC-HW-012` | `MANUFACTURER_SPEC` | `page/assets/images/E-HW-005-DS041MG舵机包装铭牌与标称规格/ds041mg-package-label.jpg` | 用户提供的 DS041MG 舵机实物外包装铭牌 | `M1-G01`, `M1-T01`, `M1-T02` | `E-HW-005` | SPECIFIED（包装标称；非装机实测性能） |
 | `SRC-DOC-001` | `OFFICIAL_DOC` | `https://isaac-sim.github.io/IsaacLab/` | NVIDIA Isaac Lab 官方文档（Actuator APIs、Manager-based RL 环境） | `Intro`, `Setup`, `M2-T06` | `E-simulation-IsaacLab执行器与RL接入规范` | UPSTREAM_DOCUMENTATION |
 | `SRC-DOC-002` | `OFFICIAL_DOC` | `https://docs.isaacsim.omniverse.nvidia.com/` | NVIDIA Isaac Sim 官方文档（PhysX 约束、RevoluteJoint、Articulation） | `USD入门`, `闭环恢复` | `E-simulation-PhysX闭环约束动力学配置` | UPSTREAM_DOCUMENTATION |
 | `SRC-DOC-003` | `OFFICIAL_DOC` | `https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/peripherals/twai.html` | ESP32-S3 TWAI/CAN 驱动协议与时序参考手册 | `M1-T04` | `E-firmware-舵机与CAN通信控制固件` | UPSTREAM_DOCUMENTATION |
