@@ -32,3 +32,17 @@
     - page/stackforce/gate/M1-G01-硬件清点.md
     - page/stackforce/topic/M1-T01-硬件基线.md
     - page/stackforce/topic/M1-T02-执行器映射.md
+
+- id: SERVO-VARIANT-20261013
+  title: DS041MG 180-degree variant confirmation
+  path: docs/sources/user-supplied/2026-10-13-ds041mg-variant.md
+  type: project-hardware-configuration
+  priority: 1
+  status: ingested
+  covered_pages:
+    - docs/evidence/E-HW-006-DS041MG舵机180度版本配置确认.md
+    - page/stackforce/evidence/evidence-registry.md
+    - page/stackforce/evidence/source-inventory.md
+    - page/stackforce/gate/M1-G01-硬件清点.md
+    - page/stackforce/topic/M1-T01-硬件基线.md
+    - page/stackforce/topic/M1-T02-执行器映射.md

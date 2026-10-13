@@ -11,7 +11,7 @@
 | Milestone | Gate | Criterion | Required | Evidence#Part | Criterion Status | Gate Status |
 |---|---|---|---:|---|---|---|
 | M1 | M1-G01 | `M1-G01-C01` | Yes | `E-HW-001#P01, E-HW-001#P05, E-DOC-004#P01` | **PASS** | **PASS** |
-| M1 | M1-G01 | `M1-G01-C02` | Yes | `E-DOC-003#P02, E-DOC-003#P05, E-HW-002#P04, E-HW-003#P01, E-HW-005#P01` | **PASS** | **PASS** |
+| M1 | M1-G01 | `M1-G01-C02` | Yes | `E-DOC-003#P02, E-DOC-003#P05, E-HW-002#P04, E-HW-003#P01, E-HW-005#P01, E-HW-006#P01` | **PASS** | **PASS** |
 | M1 | M1-G01 | `M1-G01-C03` | Yes | `E-HW-002#P02, E-HW-003#P03, E-FW-005#P04, E-FW-005#P05` | **PASS** | **PASS** |
 | M1 | M1-G01 | `M1-G01-C04` | Yes | `E-HW-004#P01, E-DOC-004#P04, E-DOC-004#P05` | **PASS** | **PASS** |
 | M1 | M1-G01 | `M1-G01-C05` | No | `E-DOC-007#P05, E-FW-008#P03` | **PASS** | **PASS** |

@@ -15,13 +15,13 @@
 | `OFFICIAL_DOC` | 4 | NVIDIA Isaac Sim / Lab 官方手册、ESP-IDF / SimpleFOC 规范 |
 | `SOURCE_CPP` | 7 | 主控板与下位机固件源码、CAN 通信库、PCA9685 驱动 |
 | `SOURCE_PYTHON` | 6 | 规范资产生成器、闭环恢复脚本、静态校验器、仿真烟囱测试器 |
-| `CONFIG` | 4 | 闭环几何元数据 (`closure_frames.json`)、URDF 描述、PlatformIO 配置 |
+| `CONFIG` | 5 | 闭环几何元数据 (`closure_frames.json`)、URDF 描述、PlatformIO 配置、项目硬件变体记录 |
 | `PROCEDURE` | 4 | 遥控器对频指南、上电检查清单、架空实验流程指南 |
 | `RUNTIME_LOG` | 3 | 架空实机串口通信全量日志、固件编译/构建日志 |
 | `PHYSICAL_MEASUREMENT` | 3 | 实机测频/延迟 CSV、执行器注册 CSV、安全联锁记录 |
 | `GENERATED_REPORT` | 3 | 2400 步 CPU 仿真报告、负对照报告、四腿几何校验报告 |
 | `EXISTING_EVIDENCE` | 6 | Wiki 现有 evidence/ 页面与 _meta 元数据配置 |
-| **总计** | **49** | **全工程关键证据源全覆盖** |
+| **总计** | **50** | **全工程关键证据源全覆盖** |
 
 ---
 
@@ -59,6 +59,7 @@
 | `SRC-CFG-002` | `CONFIG` | `sf_quad/.../urdf/stackforce_quadrupedal_wheeled_robot.urdf` | 29 links, 28 joints 规范单父树 Loop-cut URDF 描述 | `M2-G02`, `M2-T02` | `E-simulation-闭链机器人规范树资产说明` | VALIDATED（拓扑解析无环） |
 | `SRC-CFG-003` | `CONFIG` | `sf_quad/.../ref_b_real_fr/geometry_config.json` | 早期右前腿五杆几何标定配置 | `legacy`, `geometry-baseline` | `E-mechanical-双支链五杆机构与几何基线` | SUPERSEDED by `SRC-CFG-001` |
 | `SRC-CFG-004` | `CONFIG` | `script/mkdocs.yml` | Wiki 静态站点导航与渲染配置文件 | 全库 | `E-software-Wiki知识库构建与导航校验` | CONFIGURED |
+| `SRC-CFG-005` | `CONFIG` | `docs/sources/user-supplied/2026-10-13-ds041mg-variant.md` | 项目使用者确认采用 DS041MG 180° 行程版本 | `M1-G01`, `M1-T01`, `M1-T02` | `E-HW-006` | CONFIGURED（有效行程与 PWM 端点待实测） |
 | `SRC-PRC-001` | `PROCEDURE` | `doc/StackForceDog/artifacts/m1_commands.txt` | 实机架空 Session 1 指令执行脚本与操作序列 | `M1-现场产物归档` | `E-experiment-架空测试时序延迟与安全停机日志` | EXECUTED_ARCHIVED |
 | `SRC-PRC-002` | `PROCEDURE` | `doc/StackForceDog/artifacts/m1_completion_commands.txt` | 实机架空 Session 2 闭环补测执行指令序列 | `M1-现场产物归档` | `E-experiment-架空测试时序延迟与安全停机日志` | EXECUTED_ARCHIVED |
 | `SRC-PRC-003` | `PROCEDURE` | `doc/StackForceDog/M1_outcome/M1-physical-session-checklist.md` | 架空测试前置安全检查与上电步骤规程 | `M1-G10`, `T03-安全联锁` | `E-experiment-架空测试时序延迟与安全停机日志` | PROCEDURE_DEFINED |
