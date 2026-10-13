@@ -23,7 +23,8 @@
 | `SRC-HW-010` | `MANUFACTURER_SPEC` | `doc/四足机器人-origin/4例程资料/主控板例程/0使用前必看说明/使用说明.docx` | `E-DOC-006` | **CONFIRMED** | S1/S3 硬件切换与串口输出机制 |
 | `SRC-HW-011` | `MANUFACTURER_SPEC` | `doc/四足机器人-origin/5客户获取注册码/arduino使用教程.docx` | `E-DOC-007` | **CONFIRMED** | Arduino IDE 配置与注册码提取流程 |
 | `SRC-HW-012` | `MANUFACTURER_SPEC` | `page/assets/images/E-HW-005-DS041MG舵机包装铭牌与标称规格/ds041mg-package-label.jpg` | `E-HW-005` | **CONFIRMED** | 用户提供的 DS041MG 舵机实物外包装铭牌；记录型号及包装标称参数，不等同于装机实测性能 |
-| `SRC-CFG-005` | `CONFIG` | `docs/sources/user-supplied/2026-10-13-ds041mg-variant.md` | `E-HW-006` | **CONFIGURED** | 项目使用者确认采用 DS041MG 180° 行程版本；尚未实测有效行程与 PWM 端点 |
+| `SRC-CFG-005` | `CONFIG` | `docs/sources/user-supplied/2026-10-13-ds041mg-variant.md` | `E-HW-006` | **SUPERSEDED** | 180° 版本记录已由项目使用者撤销，不得用于当前计算 |
+| `SRC-CFG-006` | `CONFIG` | `docs/sources/user-supplied/2026-10-13-ds041mg-variant-correction.md` | `E-HW-007` | **CONFIGURED** | 当前按 DS041MG 300° 版本计算；有效行程与 PWM 端点待实测 |
 | `SRC-FW-001` | `SOURCE_CPP` | `doc/四足机器人-origin/2程序/bipedal_calibrate/` | `E-FW-001` | **IMPLEMENTED** | 8 舵机标定与 MPU6050 互补滤波固件 |
 | `SRC-FW-002` | `SOURCE_CPP` | `doc/四足机器人-origin/2程序/BLDC_Control/` | `E-FW-002` | **IMPLEMENTED** | 双路 SimpleFOC 闭环轮机驱动固件 |
 | `SRC-FW-003` | `SOURCE_CPP` | `doc/四足机器人-origin/2程序/SF_serveo_control/` | `E-FW-003` | **IMPLEMENTED** | PPM 中断解码、五连杆 IK 与 1Mbps CAN |
@@ -44,6 +45,7 @@
 
 ## 2. 更新日志
 
+- 2026-10-13：新增 `SRC-CFG-006`，撤销 180° 版本记录并改为按 DS041MG 300° 版本计算。
 - 2026-10-13：新增 `SRC-CFG-005`，记录 DS041MG 180° 行程版本配置。
 - 2026-10-13：新增 `SRC-HW-012`，归档 DS041MG 舵机包装铭牌并建立 `E-HW-005`。
 - 2026-09-15：重构为标准技术源只读索引（Source Index Only）；严格遵循 A PATH IS NOT EVIDENCE 原则；对齐全库 26 项核心原始技术物料。
