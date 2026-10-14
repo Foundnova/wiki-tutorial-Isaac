@@ -63,6 +63,7 @@
 
 ## Last Update
 
+- 2026-10-13：登记 E-CAL-002 的 300° 动作合同前提；物理端点与机械零位仍为未实测边界，不改变 M3/M6 验收状态。
 - 2026-09-17：依据 E-M1-002 更新 M1 为 10/10 PASS_WITH_DECLARED_GAPS；历史 ch7 failure 保留为 provenance，解除其当前 blocker 状态。
 - 2026-09-13：根据真实交付物（URDF、USD、`closure_frames.json`、`validate_asset.py`、`recover_closed_loops.py`）确立静态门禁 PASS 与动态验证边界。
 - 2026-09-11：同步 M1 两次架空实机 session；当时记录 ch7 powered-actuation blocker，现由后续 E-M1-002 保留为历史 provenance。

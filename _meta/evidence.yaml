@@ -1,3 +1,12 @@
+- id: E-CAL-002
+  source_type: derived
+  source_title: DS041MG规格与零位约定
+  source_url: docs/evidence/E-CAL-002-DS041MG规格与零位约定.md
+  source_locator: A1-A5; 名义换算; 未决项
+  accessed_at: 2026-10-13
+  claim_ids: [C-SERVO-300-CONTRACT]
+  confidence: medium
+  notes: Configured and derived action-contract premises; physical endpoints and mechanical zero remain unmeasured.
 - id: E-M1-OUTCOME-20260910
   source_type: local-artifact
   source_title: StackForceDog M1 outcome package

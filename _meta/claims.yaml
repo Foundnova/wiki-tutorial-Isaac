@@ -1,3 +1,10 @@
+- id: C-SERVO-300-CONTRACT
+  claim: "The current action-range derivation uses the configured DS041MG 300-degree variant and firmware 0-300 degree scale; physical endpoints and safe installed travel remain unmeasured and require G3 filtering."
+  claim_type: configuration
+  concept_ids: [actuator-registration, robot-geometry]
+  evidence_ids: [E-CAL-002]
+  status: verified
+  confidence: medium
 - id: C-M1-STATUS
   claim: "Historical 2026-09-10 M1 disposition was BLOCKED before the later powered all-channel regression."
   claim_type: status

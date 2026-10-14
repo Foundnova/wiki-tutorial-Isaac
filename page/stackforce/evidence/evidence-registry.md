@@ -12,6 +12,7 @@
 | Evidence ID | 证据文档标题 (Title) | 规范状态 (Status) | 认识论角色 (Epistemic Role) | 领域类别 (Domain) | 包含原子分部 (Parts) | 主要消费方 (Consumers) |
 |---|---|---|---|---|---|---|
 | **`E-CAL-001`** | 实机执行器单通道动作隔离与故障阻断记录 | **VALID** | `PHYSICAL` | Physical Calibration | `P01`~`P05`: 通道映射、阶跃测试、极性定性、ch7 故障事实、ch8 耦合分析 | `M1-G03`, `M1-G04`, `M1-G05`, `M1-G10`, `T-ACT-001`, `T03` |
+| **`E-CAL-002`** | DS041MG规格与零位约定 | **VALID** | `CONFIGURATION_AND_DERIVATION` | Servo Action Contract | A1–A5：300° 配置、固件零位约定、名义尺度、安装映射与 G3 安全筛选边界 | E0-v2 G2–G4 |
 | **`E-M1-002`** | M1实机物理契约复审与Powered全通道回归 | **VALID** | `PHYSICAL_AND_AUDIT` | M1 Real Contract | `P01`~`P05`: 机构、身份、command boundary、powered all-channel regression、ownership boundary | `M1-G03`, `M1-G04`, `M1-G10`, `T-ACT-001`, `T-ACT-002` |
 | **`E-DOC-001`** | 遥控器原厂操作与对频接线指南 | **VALID** | `DOC_SPEC` | Hardware Document | `P01`~`P04`: 接收机线序、S3 接口接线、对频时序、开机安全位姿 | `M1-G05`, `T-ACT-001`, `T03` |
 | **`E-DOC-002`** | StackForce四足狗基本操作说明 | **VALID** | `DOC_SPEC` | Hardware Document | `P01`~`P04`: 开关机规程、拨杆模式真值、摇杆量程、行走自稳条件 | `M1-G05`, `M1-G10`, `M6-G06`~`G08`, `T03` |
@@ -46,6 +47,7 @@
 
 ## 2. 更新日志
 
+- 2026-10-13：新增 `E-CAL-002`，登记 300° 舵机动作合同的 A1–A5 前提及未实测边界。
 - 2026-10-13：新增 `E-HW-007` 并将 `E-HW-006` 标记为 `SUPERSEDED`；当前配置改为 DS041MG 300° 版本。
 - 2026-10-13：新增 `E-HW-006`，将 DS041MG 的 180° 版本信息与包装铭牌证据分开记录。
 - 2026-10-13：新增 `E-HW-005`，将用户提供的 DS041MG 包装铭牌作为规格证据归档；包装标称值不提升为实测性能。
